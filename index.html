@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LinechartG</title>
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <nav class="nav-items">
+            <nav class="nav-item brand font-nice">LinechartG</nav>
+            <nav class="nav-item font-nicer">- Create simple linecharts with ease</nav>
+        </nav>
+    </nav>
+    <div id="wrapper">
+        <div class="sidebar">
+            <h2 class="font-nicer">Create your chart:</h2>
+            <form id="chart-form">
+                <ul id="chart-list" class="form-list">
+                    <li class="form-list-item">
+                        <label class="font-nicer">Title:</label>
+                        <input name="title" class="form-input" type="text" placeholder="Chart title">
+                    </li>
+                    <li class="form-list-item">
+                            <label class="font-nicer">Color:</label>
+                            <input name="color" class="form-input" type="color" value="#EA526F">
+                    </li>
+                    <li class="form-list-item">
+                            <label class="font-nicer">Width:</label>
+                            <input name="width" class="form-input" type="number" value="720">
+                    </li>
+                    <li class="form-list-item">
+                            <label class="font-nicer">Height:</label>
+                            <input name="height" class="form-input" type="width" value="480">
+                    </li>
+                    <li class="form-list-item">
+                        <label class="font-nicer">Value:</label>
+                        <input name="value" class="form-input" type="number">
+                    </li>
+                    <li class="form-list-item">
+                        <label class="font-nicer">Value:</label>
+                        <input name="value" class="form-input" type="number">
+                    </li>
+                    <li class="form-list-item">
+                        <label class="font-nicer">Value:</label>
+                        <input name="value" class="form-input" type="number">
+                    </li>
+                    <li id="last-item" class="form-list-item">
+                        <label class="font-nicer" style="text-align: right">
+                            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>:
+                        </label>
+                        <button id="add-input-btn" class="btn">
+                            <i class="fa fa-plus" aria-hidden="true"></i>                                
+                        </button>
+                        <button id="remove-input-btn" class="btn">
+                            <i class="fa fa-minus" aria-hidden="true"></i>                                
+                        </button>
+                    </li>
+                </ul>
+                <button class="btn" type="submit">
+                    <i class="fa fa-line-chart" aria-hidden="true"></i> 
+                    Create chart                             
+                </button>     
+            </form>
+        </div>
+        <main class="container">
+            <h1 id="chart-area-header">Your awesome chart will come here!</h1>
+            <div id="chart-area"></div>
+        </main>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/canvas.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
