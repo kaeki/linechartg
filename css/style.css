@@ -25,6 +25,9 @@ html, body {
     display: inline-block;
     font-size: 1.5em;
 }
+.nav-center {
+    margin-left: 120px;
+}
 .brand {
     font-family: 'Pacifico', cursive;
     font-size: 2em; 

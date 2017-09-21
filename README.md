@@ -9,3 +9,4 @@ Really simple line chart generator made with HTML5 canvas
 * Add option for multiple lines
 * Meters and values for axis'
 * Bar charts(?)
+
